@@ -1,0 +1,2 @@
+ "start": "node index.js ",
+ "dev": "nodemon index.js localhost 3080"
