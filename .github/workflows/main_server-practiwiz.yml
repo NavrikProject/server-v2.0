@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'server-practiwiz'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C50F73D3235748219FE7555A163FE7C7 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7269FC716B254E859B4D4B2B61FCBB58 }}
           package: .
