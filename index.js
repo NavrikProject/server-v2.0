@@ -34,7 +34,7 @@ app.use(
     createParentPath: true,
   })
 );
-const port = process.env.PORT || 8080;
+const port = process.env.PORT;
 
 app.get("/api/get-razorpay-key", (req, res) => {
   res.send({ key: process.env.RAZORPAY_KEY_ID });
