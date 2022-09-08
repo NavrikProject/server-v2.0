@@ -546,7 +546,7 @@ export async function getMentorAllCancelledSessions(req, res, next) {
 function sentEmailRemainderBeforeOneDayToMentor(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const mentorSessionsStatus = "upcoming";
@@ -591,7 +591,7 @@ function sentEmailRemainderBeforeOneDayToMentor(req, res) {
 function sentEmailRemainderOnTheDayToMentor(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const mentorSessionsStatus = "upcoming";
@@ -635,7 +635,7 @@ function sentEmailRemainderOnTheDayToMentor(req, res) {
 function sentEmailRemainderToMentorBefore10Min(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const mentorSessionsStatus = "upcoming";
@@ -704,7 +704,7 @@ function sentEmailRemainderToMentorBefore10Min(req, res) {
 function sentEmailRemainderToMentorBefore5Min(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const mentorSessionsStatus = "upcoming";
@@ -773,7 +773,7 @@ function sentEmailRemainderToMentorBefore5Min(req, res) {
 function sentEmailRemainderToMentorToStart(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const mentorSessionsStatus = "upcoming";

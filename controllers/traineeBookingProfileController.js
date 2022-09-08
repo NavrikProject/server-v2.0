@@ -982,7 +982,7 @@ export async function getAllRefundedSessions(req, res, next) {
 function sentEmailRemainderBeforeOneDayToTrainee(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const traineeSessionStatus = "upcoming";
@@ -1027,7 +1027,7 @@ function sentEmailRemainderBeforeOneDayToTrainee(req, res) {
 function sentEmailRemainderOnTheDayToTrainee(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const traineeSessionStatus = "upcoming";
@@ -1071,7 +1071,7 @@ function sentEmailRemainderOnTheDayToTrainee(req, res) {
 function sentEmailRemainderToTraineeBefore10Min(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const traineeSessionStatus = "upcoming";
@@ -1141,7 +1141,7 @@ function sentEmailRemainderToTraineeBefore10Min(req, res) {
 function sentEmailRemainderToTraineeBefore5Min(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const traineeSessionStatus = "upcoming";
@@ -1210,7 +1210,7 @@ function sentEmailRemainderToTraineeBefore5Min(req, res) {
 function sentEmailRemainderToTraineeToStart(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const traineeSessionStatus = "upcoming";
@@ -1255,7 +1255,7 @@ function sentEmailRemainderToTraineeToStart(req, res) {
 function sentEmailRemainderToFillFeedback(req, res) {
   try {
     sql.connect(config, (err) => {
-      if (err) return res.send(err.message);
+      if (err) return console.log(err.message);
       const request = new sql.Request();
       const amountPaidStatus = "Paid";
       const traineeSessionStatus = "attended";
